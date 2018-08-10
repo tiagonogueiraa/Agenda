@@ -24,7 +24,7 @@
 
 	?>
 
-	<div class="container-fluid">
+	<div class="container">
 		<!-- menu -->
 
 
@@ -60,9 +60,25 @@
 					</div>
 
 					<div class="form-group">
-						<label for="rua">Cidade</label>
-						<input type="text" class="form-control" name="rua" id="rua" placeholder="Rua">
+						<label for="bairro">Bairro</label>
+						<input type="text" class="form-control" name="bairro" id="bairro" placeholder="Bairro">
 					</div>
+					<div class="form-group">
+						<label for="cidade">Cidade</label>
+						<input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade">
+					</div>
+
+					<div class="form-group">
+						<label for="estado">Estado</label>
+						<input type="text" class="form-control" name="estado" id="estado" placeholder="Estado">
+					</div>
+
+					<div class="form-group">
+						<label for="cep">Cep</label>
+						<input type="text" class="form-control" name="cep" id="cep" placeholder="cep">
+					</div>
+
+
 
 
 			<!--		<div class="form-group">
@@ -74,27 +90,27 @@
 
 						</select>
 					</div>
--->
-					<div class="form-group">
-						<label for="endereco">Cep</label>
-						<input type="text" class="form-control" name="cep" id="cep" placeholder="CEP">
-					</div>
-					<br>
+				-->
+				<div class="form-group">
+					<label for="pais">País</label>
+					<input type="text" class="form-control" name="pais" id="cep" placeholder="País">
+				</div>
+				<br>
 
 
-					<button type="submit" class="btn btn-primary">Gravar</button>
-				</form>
-
-			</div>
+				<button type="submit" class="btn btn-primary">Gravar</button>
+			</form>
 
 		</div>
 
 	</div>
 
+</div>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 
 
 </body>
