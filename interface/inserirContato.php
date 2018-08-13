@@ -38,7 +38,7 @@
 
 				<h1>Cadastro Contato</h1>
 
-				<form action="../controlerClientes.php" method="post">
+				<form action="../controller/controllerContato.php" method="post">
 
 					<input type="hidden" name="opcao" value="1" />
 

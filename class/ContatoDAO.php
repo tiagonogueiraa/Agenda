@@ -16,18 +16,21 @@ require_once('contato.php');
 			$this->con = $c->getConexao();
 		}
 
-		public function incluirContato( Contato $contato)
+		public function incluirContato(Contato $contato)
 		{
 
 
-			$sql = $this->con->prepare("INSERT INTO contato( nome, telefoneFixo, telefoneCelular, rua, cidade, cep) VALUES (:nome, :telefoneF, :telefoneC, :rua, :cidade, :cep)");
+			$sql = $this->con->prepare("INSERT INTO contato( nome, telefoneFixo, telefoneCelular, rua, bairro, cidade, estado, cep, pais) VALUES (:nome, :telefoneF, :telefoneC, :rua, :bairro, :cidade, :estado, :cep, :pais)");
 
 			$sql->bindValue(':nome', $contato->getNome());
 			$sql->bindValue(':telefoneF', $contato->getTelefoneFixo());
 			$sql->bindValue(':telefoneC', $contato->getTelefoneCelular());
 			$sql->bindValue(':rua', $contato->getRua());
+			$sql->bindValue(':bairro', $contato->getBairro());
 			$sql->bindValue(':cidade', $contato->getCidade());
+			$sql->bindValue(':estado', $contato->getEstado());
 			$sql->bindValue(':cep', $contato->getCep());
+			$sql->bindValue(':pais', $contato->getPais());
 
 
 			$sql->execute();

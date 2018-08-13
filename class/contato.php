@@ -1,18 +1,71 @@
 <?php 
 
-class contato {
+class Contato {
 
+    private $id;
 	private $nome;
 	private $telefoneFixo;
 	private $telefoneCelular;
 	private $rua;
+    private $bairro;
 	private $cidade;
+    private $estado;
 	private $cep;
+    private $pais;
 
-	
+    public function setContato($id, $nome, $telefoneFixo, $telefoneCelular, $rua, $bairro, $cidade, $estado, $cep, $pais) {
 
+        $this->id = $id;
+        $this->nome = $nome;
+        $this->telefoneFixo = $telefoneFixo;
+        $this->telefoneCelular = $telefoneCelular;
+        $this->rua = $rua;
+        $this->bairro = $bairro;
+        $this->cidade = $cidade;
+        $this->estado = $estado;
+        $this->cep = $cep;
+        $this->pais = $pais;
 
+    }
 
+      public function Contato( $nome, $telefoneFixo, $telefoneCelular, $rua, $bairro, $cidade, $estado, $cep, $pais) {
+
+        
+        $this->nome = $nome;
+        $this->telefoneFixo = $telefoneFixo;
+        $this->telefoneCelular = $telefoneCelular;
+        $this->rua = $rua;
+        $this->bairro = $bairro;
+        $this->cidade = $cidade;
+        $this->estado = $estado;
+        $this->cep = $cep;
+        $this->pais = $pais;
+
+    }
+
+    
+
+    
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param mixed $id
+     *
+     * @return self
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
 
     /**
      * @return mixed
@@ -97,6 +150,26 @@ class contato {
     /**
      * @return mixed
      */
+    public function getBairro()
+    {
+        return $this->bairro;
+    }
+
+    /**
+     * @param mixed $bairro
+     *
+     * @return self
+     */
+    public function setBairro($bairro)
+    {
+        $this->bairro = $bairro;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
     public function getCidade()
     {
         return $this->cidade;
@@ -117,6 +190,26 @@ class contato {
     /**
      * @return mixed
      */
+    public function getEstado()
+    {
+        return $this->estado;
+    }
+
+    /**
+     * @param mixed $estado
+     *
+     * @return self
+     */
+    public function setEstado($estado)
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
     public function getCep()
     {
         return $this->cep;
@@ -130,6 +223,26 @@ class contato {
     public function setCep($cep)
     {
         $this->cep = $cep;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPais()
+    {
+        return $this->pais;
+    }
+
+    /**
+     * @param mixed $pais
+     *
+     * @return self
+     */
+    public function setPais($pais)
+    {
+        $this->pais = $pais;
 
         return $this;
     }
