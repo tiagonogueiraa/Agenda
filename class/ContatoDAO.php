@@ -36,6 +36,20 @@ require_once('contato.php');
 			$sql->execute();
 		}
 
+		public function getContatos(){
+
+			$rs = $this->con->query("SELECT * FROM contato");
+
+			$lista = array();
+			while ($contato = $rs->fetch(PDO::FETCH_OBJ)) {
+
+				$lista[] = $contato;
+			}
+
+			return $lista;
+
+		}
+
 
 
 	}

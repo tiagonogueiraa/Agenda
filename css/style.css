@@ -1,20 +1,16 @@
-.carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
- 
-
-.menu a {
-	color: black;
-
-}
-
-.teste img {
+table {
 	height: 500px;
-
 }
 
-.desenho {
-	height: 200px;
+fieldset {
 
+	height: 500px;
 }
+
+.form-group input { 
+
+	margin-bottom: 0 !important; 
+} 
+
+
+

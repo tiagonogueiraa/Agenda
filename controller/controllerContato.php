@@ -16,7 +16,21 @@ if($opcao == 1)
 
 	
 
-	header("Location:controllerAutor.php?opcao=2");
+	header("Location:controllerContato.php?opcao=2");
+}
+
+if ($opcao == 2) {
+	
+	$contatoDao = new ContatoDAO();
+
+	$lista = $contatoDao->getContatos();
+
+	session_start();
+
+	$_SESSION['contatos']=$lista;
+
+	header("Location:../interface/exibirContatos.php");
+
 }
 
 
