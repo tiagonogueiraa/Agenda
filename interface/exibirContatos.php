@@ -23,20 +23,34 @@
 	
 	<div class="container menu">
 		<div class="row">
-			
-			<ul class="nav">
-				<li class="nav-item">
-					<a class="nav-link" href="">Inserir</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="">Buscar</a>
-				</li>
-			</ul>
+
+			<div class="col-8">
+
+				<ul class="nav">
+					<li class="nav-item">
+						<a class="nav-link" href="">Inserir</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">Buscar</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div class="col-4">
+				<form class="form-inline">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-primary" type="submit">Search</button>
+				</form>
+			</div>
 
 		</div>
 		
 
 	</div>
+
+	
 
 	<div class="container">
 
@@ -44,8 +58,8 @@
 
 
 
-	
-		<div class="row" style="">
+
+		<div class="row tabelaContatos" >
 			<table class="table table-hover table-sm table-responsive" >
 				<thead>
 					<tr>
@@ -76,9 +90,26 @@
 						echo "<td>".$cont->cep."</td>";
 						echo "<td>".$cont->pais."</td>";
 						
-						echo "<td><a href='controlerAutor.php?opcao=3&id=".$cont->id. "'>Alterar</a>&nbsp;";
-						echo "<a href='controlerAutor.php?opcao=4&id=".$cont->id."'>Excluir</a></td>";
-						echo "</tr>";
+					#	echo "<td><a href='controlerAutor.php?opcao=3&id=".$cont->id. "'>Alterar</a>&nbsp;";
+					#	echo "<a href='controlerAutor.php?opcao=4&id=".$cont->id."'>Excluir</a></td>";
+					#	echo "</tr>";
+
+
+						echo "
+						
+						<td><a href='controlerAutor.php?opcao=3&id=".$cont->id. "'>
+						<button type='button' class='btn btn-primary'>Alterar</button>
+
+						</a></td>";
+						echo "<td><a href='controlerAutor.php?opcao=4&id=".$cont->id."'>
+						<button type='button' class='btn btn-primary'>Excluir</button>
+						</a></td>";
+						echo "</tr>
+
+						"
+						
+						;
+
 					}
 					?>
 				</tbody>
