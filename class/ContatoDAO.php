@@ -50,6 +50,18 @@ require_once('contato.php');
 
 		}
 
+		public function buscaContatos( $busca ){
+
+
+			$rs = $this->con->query("SELECT * FROM contato WHERE nome LIKE '%'".$busca."%' ORDER BY nome");
+
+			$lista = array();
+
+			while ($contato ) {
+				# code...
+			}
+		}
+
 
 
 	}

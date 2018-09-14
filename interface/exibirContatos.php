@@ -39,8 +39,9 @@
 			</div>
 
 			<div class="col-4">
-				<form class="form-inline">
-					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<form action="../controller/controllerContato.php/" method="post" class="form-inline">
+					<input type="hidden" name="opcao" value="3">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" name="pesquisa" aria-label="Search">
 					<button class="btn btn-outline-primary" type="submit">Search</button>
 				</form>
 			</div>
