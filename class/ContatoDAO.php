@@ -50,16 +50,22 @@ require_once('contato.php');
 
 		}
 
-		public function buscaContatos( $busca ){
+		public function buscaContatos($busca){
 
 
 			$rs = $this->con->query("SELECT * FROM contato WHERE nome LIKE '%'".$busca."%' ORDER BY nome");
 
+		#	$result = $rs->fetchAll(PDO::FETCH_ASSOC)
+
 			$lista = array();
 
-			while ($contato ) {
-				# code...
+			while ($contato = $rs->fetchAll(PDO::FETCH_ASSOC)) {
+
+				$lista[] = $contato;
+				
 			}
+
+			return $lista;
 		}
 
 
