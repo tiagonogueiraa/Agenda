@@ -12,11 +12,10 @@ fieldset {
 	margin-bottom: 0 !important; 
 } 
 
-.tabelaContatos td {
 
+.tamanhoFixo {
 
-	height: 5px;
-	
+	resize: horizontal;
 }
 
 

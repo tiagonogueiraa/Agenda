@@ -41,8 +41,8 @@
 			<div class="col-4">
 				<form action="../controller/controllerContato.php?opcao=3" method="post" class="form-inline">
 				<!--	<input type="hidden" name="opcao" value="3" /> -->
-					<input class="form-control mr-sm-2" type="search" placeholder="Search" name="busca" aria-label="Search">
-					<button class="btn btn-outline-primary" type="submit">Search</button>
+					<input class="form-control mr-sm-2" type="search" placeholder="Buscar" name="busca" aria-label="Search">
+					<button class="btn btn-outline-primary" type="submit">Buscar</button>
 				</form>
 			</div>
 
@@ -61,10 +61,10 @@
 
 
 		<div class="row tabelaContatos" >
-			<table class="table table-hover table-sm table-responsive" >
+			<table class="table-hover table-sm table-responsive" >
 				<thead>
 					<tr>
-						<th scope="col">Nome</th>
+						<th scope="col" style="width: 20%">Nome</th>
 						<!-- <th>Sobrenome</th> -->
 						<th scope="col">Telefone Celular</th>
 						<th scope="col">Telefone Fixo</th>

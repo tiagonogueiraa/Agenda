@@ -10,6 +10,9 @@ $opcao = (int)$_REQUEST['opcao'];
 
 if($opcao == 1)
 {
+
+
+
 	$contato = new Contato($_POST['nome'], $_POST['telefoneFixo'], $_POST['telefoneCelular'], $_POST['rua'], $_POST['bairro'], $_POST['cidade'], $_POST['cep'], $_POST['estado'], $_POST['pais']);
 
 	$contatoDao = new ContatoDAO();
@@ -50,6 +53,11 @@ if($opcao == 3)
 	header("Location:../interface/exibirContatos.php");
 }
 
+if($opcao == 4)
+{
+
+	header("Location:../interface/inserirContato.php");
+}
 
 
 
