@@ -28,7 +28,7 @@
 
 				<ul class="nav">
 					<li class="nav-item">
-						<a class="nav-link" href="">Inserir</a>
+						<a class="nav-link" href="inserirContato.php">Inserir</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="">Buscar</a>
