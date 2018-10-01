@@ -30,7 +30,7 @@
 
 		<div class="row" style="height: 50px">
 			
-			<?php #require_once ("menu.php") ?>
+			<?php include 'menu.php' ?>
 			
 		</div>
 		

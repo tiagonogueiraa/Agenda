@@ -71,8 +71,8 @@
 						<th scope="col">Rua</th>
 						<th scope="col">Bairro</th>
 						<th scope="col">Cidade</th>
+						<th scope="col" style="width: all;">CEP</th>
 						<th scope="col">Estado</th>
-						<th scope="col">CEP</th>
 						<th scope="col">País</th>
 					</tr>
 				</thead>
@@ -98,7 +98,7 @@
 
 						echo "
 						
-						<td><a href='controlerAutor.php?opcao=3&id=".$cont->id. "'>
+						<td><a href='../controller/controllerContato.php?opcao=5&id=".$cont->id. "'>
 						<button type='button' class='btn btn-primary'>Alterar</button>
 
 						</a></td>";

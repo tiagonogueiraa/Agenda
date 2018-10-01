@@ -56,9 +56,21 @@ if($opcao == 3)
 if($opcao == 4)
 {
 
+
 	header("Location:../interface/inserirContato.php");
 }
 
+if($opcao == 5)
+{
+
+	$id_contato = (int)$_REQUEST['id'];
+
+	$contatoDao = new ContatoDAO();
+
+	$contato = $contatoDao->getContatoById($id_contato);
+
+	header("Location:../interface/alterarContato.php");
+}
 
 
 

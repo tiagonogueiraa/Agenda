@@ -67,6 +67,18 @@ class ContatoDAO{
 		
 	}
 
+	public function getContatoById($id_contato)
+	{
+
+		$sql = $this->con->prepare("SELECT * FROM contato WHERE id = :id_contato ");
+
+		$sql->bindValue(':id_contato', $id_contato);
+		$sql->execute();
+
+		return $sql->fetch(PDO::FETCH_OBJ);
+
+	}
+
 
 
 
