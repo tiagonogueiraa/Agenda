@@ -23,10 +23,10 @@
 
 				<ul class="nav">
 					<li class="nav-item">
-						<a class="nav-link" href="../controller/controllerContato.php?opcao=4">Inserir</a>
+						<a class="nav-link" href="controller/controllerContato.php?opcao=4">Inserir</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="../controller/controllerContato.php?opcao=2">Lista</a>
+						<a class="nav-link" href="controller/controllerContato.php?opcao=2">Lista</a>
 					</li>
 
 				</ul>

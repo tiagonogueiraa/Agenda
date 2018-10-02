@@ -28,12 +28,38 @@
 		<!-- menu -->
 
 
-		<div class="row" style="height: 50px">
-			
-			<?php include 'menu.php' ?>
-			
+		<div class="row">
+
+			<div class="col-8">
+
+				<ul class="nav">
+					<li class="nav-item">
+						<a class="nav-link" href="inserirContato.php">Inserir</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="exibirContatos.php">Lista Contatos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="alterarContato.php">Alterar Contato</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div class="col-4">
+				<form action="../controller/controllerContato.php?opcao=3" method="post" class="form-inline">
+					<!--	<input type="hidden" name="opcao" value="3" /> -->
+					<input class="form-control mr-sm-2" type="search" placeholder="Buscar" name="busca" aria-label="Search">
+					<button class="btn btn-outline-primary" type="submit">Buscar</button>
+				</form>
+			</div>
+
 		</div>
 		
+
+
+
 		<div class="row formContato" >
 			<div class="col-12">
 
@@ -86,39 +112,40 @@
 
 
 
-			<!--		<div class="form-group">
-						<label for="cidade">Cidade</label>
-						<select type="text" class="form-control" name="id_cidade">
-							<?php foreach ($cidades as $c) {
-	#							echo "<option value=$c->id_cidade> $c->cidade</option>";
-							} ?>	
+						<!--		<div class="form-group">
+									<label for="cidade">Cidade</label>
+									<select type="text" class="form-control" name="id_cidade">
+										<?php foreach ($cidades as $c) {
+				#							echo "<option value=$c->id_cidade> $c->cidade</option>";
+										} ?>	
 
-						</select>
-					</div>
-				-->
-				<div class="form-group col-md-4">
-					<label for="pais">País</label>
-					<input type="text" class="form-control" name="pais" id="cep" placeholder="País">
-				</div>
+									</select>
+								</div>
+							-->
+							<div class="form-group col-md-4">
+								<label for="pais">País</label>
+								<input type="text" class="form-control" name="pais" id="cep" placeholder="País">
+							</div>
+						</div>
+						<br>
+
+						<br>
+						<button type="submit" class="btn btn-primary">Gravar</button>
+					</form>
+				</fieldset>
+
+
 			</div>
-			<br>
+		</div>
 
-			<br>
-			<button type="submit" class="btn btn-primary">Gravar</button>
-		</form>
-	</fieldset>
+	</div>
 
 
-</div>
-
-</div>
-
-</div>
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 
 
 </body>
