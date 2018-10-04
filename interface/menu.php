@@ -16,7 +16,7 @@
 <body>
 
 
-<div class="container menu">
+	<div class="container menu">
 		<div class="row">
 
 			<div class="col-8">
@@ -26,7 +26,7 @@
 						<a class="nav-link" href="controller/controllerContato.php?opcao=4">Inserir</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="controller/controllerContato.php?opcao=2">Lista</a>
+						<a class="nav-link" href="../controller/controllerContato.php?opcao=2">Lista</a>
 					</li>
 
 				</ul>
@@ -35,7 +35,7 @@
 
 			<div class="col-4">
 				<form action="../controller/controllerContato.php?opcao=" method="post" class="form-inline">
-				<!--	<input type="hidden" name="opcao" value="3" /> -->
+					<!--	<input type="hidden" name="opcao" value="3" /> -->
 					<input class="form-control mr-sm-2" type="search" placeholder="Buscar" name="busca" aria-label="Search">
 					<button class="btn btn-outline-primary" type="submit">Buscar</button>
 				</form>
