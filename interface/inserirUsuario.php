@@ -65,7 +65,7 @@
 
 				<h1>Cadastro Contato</h1>
 				<fieldset>
-					<form action="../controller/controllerContato.php" method="post">
+					<form action="../controller/controllerUsuario.php" method="post">
 
 						<input type="hidden" name="opcao" value="1" />
 
@@ -85,8 +85,8 @@
 						</div>
 						<div class="form-row">
 							<div class="form-group col-md-4">
-								<label for="usuario">Usuario</label>
-								<input type="text" class="form-control" name="usuario" id="usuario" placeholder="Usuario">
+								<label for="login">Login</label>
+								<input type="text" class="form-control" name="login" id="login" placeholder="Login">
 							</div>
 
 							<div class="form-group col-md-4">

@@ -19,12 +19,12 @@
 		public function incluirUsuario(Usuario $usuario)
 		{
 
-			$sql = $this->con->prepare("INSERT INTO contato(nome, email, cpf, usuario, senha, nivel, ativo) VALUES (:nome, :email, :cpf, :usuario, :senha, :nivel, :ativo)");
+			$sql = $this->con->prepare("INSERT INTO contato(nome, email, cpf, login, senha, nivel, ativo) VALUES (:nome, :email, :cpf, :login, :senha, :nivel, :ativo)");
 
 			$sql->bindValue(':nome', $usuario->getNome());
 			$sql->bindValue(':email', $usuario->getEmail());
 			$sql->bindValue(':cpf', $usuario->getCpf());
-			$sql->bindValue(':usuario', $usuario->getUsuario());
+			$sql->bindValue(':login', $usuario->getLogin());
 			$sql->bindValue(':senha', $usuario->getSenha());
 			$sql->bindValue(':nivel', $usuario->getNivel());
 			$sql->bindValue(':ativo', $usuario->getAtivo());
